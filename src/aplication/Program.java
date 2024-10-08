@@ -25,13 +25,13 @@ public class Program {
 		y.b = edd.nextDouble();
 		y.c = edd.nextDouble();
 
-		double p = (x.a + x.b + x.c) / 2;
-		double areax = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
-		p = (y.a + y.b + y.c) / 2;
-		double areay = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
+		
+		double areax = x.area();
+		
+		double areay = y.area();
 		
 		System.out.printf("AREA DE X: %.4f%n",areax);
-		System.out.printf("AREA DE X: %.4f%n",areay);
+		System.out.printf("AREA DE Y: %.4f%n",areay);
 
 		
 		if (areax>areay) {

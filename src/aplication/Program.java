@@ -3,6 +3,8 @@ package aplication;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entities.Triangle;
+
 public class Program {
 
 	public static void main(String[] args) {
@@ -11,21 +13,22 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner edd = new Scanner(System.in);
 
-		double xA, xB, xC, yA, yB, yC;
+		Triangle x = new Triangle();
+		Triangle y = new Triangle();
 
 		System.out.println("MEDIDAS DE X");
-		xA = edd.nextDouble();
-		xB = edd.nextDouble();
-		xC = edd.nextDouble();
+		x.a = edd.nextDouble();
+		x.b = edd.nextDouble();
+		x.c = edd.nextDouble();
 		System.out.println("MEDIDAS DE Y");
-		yA = edd.nextDouble();
-		yB = edd.nextDouble();
-		yC = edd.nextDouble();
+		y.a = edd.nextDouble();
+		y.b = edd.nextDouble();
+		y.c = edd.nextDouble();
 
-		double p = (xA + xB + xC) / 2;
-		double areax = Math.sqrt(p * (p - xA) * (p - xB) * (p - xC));
-		p = (yA + yB + yC) / 2;
-		double areay = Math.sqrt(p * (p - yA) * (p - yB) * (p - yC));
+		double p = (x.a + x.b + x.c) / 2;
+		double areax = Math.sqrt(p * (p - x.a) * (p - x.b) * (p - x.c));
+		p = (y.a + y.b + y.c) / 2;
+		double areay = Math.sqrt(p * (p - y.a) * (p - y.b) * (p - y.c));
 		
 		System.out.printf("AREA DE X: %.4f%n",areax);
 		System.out.printf("AREA DE X: %.4f%n",areay);

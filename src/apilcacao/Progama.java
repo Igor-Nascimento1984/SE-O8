@@ -23,6 +23,8 @@ public class Progama {
 		System.out.print("QUANTIDADE:");
 		produto.quantidade = edd.nextInt();
 
+		
+		System.out.println(produto.toString());
 		edd.close();
 	}
 

@@ -18,4 +18,8 @@ public class Produto {
 	public void removeIntens(int quantidade) {
 		this.quantidade -= quantidade; 
 	}
+	
+	public String toString() {
+		return "PRODUTO:"+nome + " - PREÇO: R$" + preco+": "+ 
+	}
 }

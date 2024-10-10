@@ -25,6 +25,7 @@ public class Progama {
 
 		
 		System.out.println(produto.toString());
+		System.out.println("ADICONAR PRODUTO:");
 		edd.close();
 	}
 

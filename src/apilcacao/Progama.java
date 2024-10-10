@@ -25,7 +25,14 @@ public class Progama {
 
 		
 		System.out.println(produto.toString());
-		System.out.println("ADICONAR PRODUTO:");
+		System.out.print("ADICONAR PRODUTO: ");
+		int quantidade = edd.nextInt();
+		produto.addIntens(quantidade);
+		System.out.println(produto.toString());
+		System.out.print("RETIRAR PRODUTO: ");
+		quantidade = edd.nextInt();
+		produto.removeIntens(quantidade);
+		System.out.println(produto.toString());
 		edd.close();
 	}
 

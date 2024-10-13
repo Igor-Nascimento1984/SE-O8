@@ -11,18 +11,18 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner edd = new Scanner(System.in);
 
-		Calculator calc = new Calculator();
+		
 		
 		System.out.print("RAIO:");
 		double raio = edd.nextDouble();
 
-		double c = calc.circunferencia(raio);
+		double c = Calculator.circunferencia(raio);
 
-		double v = calc.volume(raio);
+		double v = Calculator.volume(raio);
 
 		System.out.printf("CIRCUNFERÊNCIA: %.2f%n", c);
 		System.out.printf("VOLUME: %.2f%n", v);
-		System.out.printf("VALOR DE PI: %.2f%n", calc.PI);
+		System.out.printf("VALOR DE PI: %.2f%n", Calculator.PI);
 
 		edd.close();
 	}
